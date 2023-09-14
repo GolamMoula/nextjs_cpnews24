@@ -1,0 +1,35 @@
+.imagetitle_E_L {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.cat_six_img-container {
+    width: 290px;
+    height: 120px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.cat_six_image-container {
+    position: relative;
+    margin: 5px;
+}
+
+
+.awami_league {
+    position: relative;
+    width: 70px;
+    height: 20px;
+    background-color: rgb(110, 105, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-right-radius: 20px; */
+    overflow: hidden;
+  }

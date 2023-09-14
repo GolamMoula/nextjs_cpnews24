@@ -1,0 +1,22 @@
+.Special_events_head {
+    width: 500px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    align-items: center;
+
+}
+
+
+.Special_events_head_title {
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+

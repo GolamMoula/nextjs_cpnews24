@@ -1,0 +1,36 @@
+.last_title {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 17px;
+    text-align: center;
+   
+    border-radius: 10px;
+    width: 100%;
+}
+.last_three_image-container {
+    position: relative;
+    margin-left: 126px;
+    margin: 0;
+}
+.title_last_three {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container_last_three {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }

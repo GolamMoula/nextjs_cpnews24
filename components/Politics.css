@@ -1,0 +1,37 @@
+.container_politics {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .title_politics {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .awami_league {
+    position: relative;
+    width: 90px;
+    height: 20px;
+    background-color: rgb(110, 105, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-right-radius: 20px; */
+    overflow: hidden;
+  }
+
+  .awami_league_title_politics {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }

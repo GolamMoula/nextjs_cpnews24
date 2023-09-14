@@ -1,0 +1,41 @@
+.container_International_economics {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .title_International_economics {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .awami_league_International_economics {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    background-color: rgb(110, 105, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-right-radius: 20px; */
+    overflow: hidden;
+  }
+
+  .International_economics_tag {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .international_headline{
+    font-size: 12px;
+  }

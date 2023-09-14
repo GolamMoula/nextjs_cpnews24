@@ -1,0 +1,22 @@
+.imagetitle_S_D {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.cat_six_img-container {
+    width: 290px;
+    height: 100px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.cat_six_image-container {
+    position: relative;
+    margin: 5px;
+}
