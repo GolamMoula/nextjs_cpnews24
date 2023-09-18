@@ -77,7 +77,7 @@ const page: FC<pageProps> = ({ }) => {
 }
   return (
 
-   <div className="w-[1200px] mx-auto grid lg:grid-cols-1 gap-5 pt-6 ">
+   <div className="mx-56 my-10 grid lg:grid-cols-1 gap-5 pt-6">
       <div className='text-3xl'>
       {NewsData ? ( 
       <h1><a href="/">Home</a>/ <a href={`/Division/${NewsData.division.id}/${NewsData.division.name}/`}>{NewsData.division.name}</a> / <a href={`/District/${NewsData.district.id}/${NewsData.district.name}/`}>{NewsData.district.name}</a> / {upazilaName}</h1>     
@@ -86,7 +86,7 @@ const page: FC<pageProps> = ({ }) => {
       )}
       </div>
 
-    <div className="w-[1200px] mx-auto grid lg:grid-cols-4 gap-5 pt-6 ">
+    <div className="flex flex-wrap space-x-4 mx-auto gap-5 pt-6 ">
   {NewsData ? (
     NewsData.Upazila_News.map((newsItem: any, index: number) => {
       const news_Data = newsItem.news;

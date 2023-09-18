@@ -79,12 +79,12 @@ const page: FC<pageProps> = ({ }) => {
 }
   return (
 
-    <div className="w-[1200px] mx-auto grid lg:grid-cols-1 gap-5 pt-6 ">
+    <div className="mx-56 my-10 grid lg:grid-cols-1 gap-5 pt-6">
       <div className='text-3xl'>
         <h1><a href="/">Home</a> / {divisionName}</h1>
       </div>
       <div>
-        <ul className="flex space-x-4">
+        <ul className="flex flex-wrap space-x-4">
         {districtData ? districtData.district.map(element => (
                   <li className="border rounded px-4 py-4 hover:bg-gray-200 text-2xl" key={element.id}>
                     
@@ -96,9 +96,7 @@ const page: FC<pageProps> = ({ }) => {
                 )) : <p>Loading data...</p>}
         </ul>
       </div>
-    <div className="w-[1200px] mx-auto grid lg:grid-cols-4 gap-5 pt-6 ">
-
-      
+    <div className="flex flex-wrap space-x-4 mx-auto gap-5 pt-6 ">    
   {NewsData ? (
     NewsData.Division_News.map((newsItem: any, index: number) => {
       const news_Data = newsItem.news;

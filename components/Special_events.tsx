@@ -55,7 +55,7 @@ function Special_events() {
                             {NewsData ? (
                                 // news_Data = NewsData.breaking_news[0].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 400),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.breaking_news[0].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.breaking_news[0].id}/${NewsData.breaking_news[0].headline}`} className="flex justify-start items-center">
                                     <div className="w-[650px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -81,7 +81,7 @@ function Special_events() {
                             {NewsData ? (
                                 news_Data = NewsData.breaking_news[1].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.breaking_news[1].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.breaking_news[1].id}/${NewsData.breaking_news[1].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -102,7 +102,7 @@ function Special_events() {
                             {NewsData ? (
                                 news_Data = NewsData.breaking_news[2].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.breaking_news[2].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.breaking_news[2].id}/${NewsData.breaking_news[2].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -123,7 +123,7 @@ function Special_events() {
                             {NewsData ? (
                                 news_Data = NewsData.breaking_news[3].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.breaking_news[3].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.breaking_news[3].id}/${NewsData.breaking_news[3].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -144,7 +144,7 @@ function Special_events() {
                             {NewsData ? (
                                 news_Data = NewsData.breaking_news[4].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.breaking_news[4].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.breaking_news[4].id}/${NewsData.breaking_news[4].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"

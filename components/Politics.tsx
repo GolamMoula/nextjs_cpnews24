@@ -90,7 +90,7 @@ interface Props {
                             {NewsData ? (
                                 news_Data = NewsData.category_news[0].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[0].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.category_news[0].id}/${NewsData.category_news[0].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -111,7 +111,7 @@ interface Props {
                             {NewsData ? (
                                 news_Data = NewsData.category_news[1].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[1].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.category_news[1].id}/${NewsData.category_news[1].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -132,7 +132,7 @@ interface Props {
                             {NewsData ? (
                                 news_Data = NewsData.category_news[2].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[2].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.category_news[2].id}/${NewsData.category_news[2].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -153,7 +153,7 @@ interface Props {
                             {NewsData ? (
                                 news_Data = NewsData.category_news[3].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[3].id}`} className="flex justify-start items-center">
+                                <Link href={`/News/${NewsData.category_news[3].id}/${NewsData.category_news[3].headline}`} className="flex justify-start items-center">
                                     <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -180,22 +180,25 @@ interface Props {
 
                     <div className="w-[580px] grid lg:grid-cols-2 gap-5 pt-6">
                         <div className="w-[290px] grid lg:grid-cols-4 gap-5 pt-6">
-                            <div className="py-3 text-left container_politics">
+                            <div className="py-3 text-left container_politics">                            
                                 <h1 className="title_politics">শিক্ষা</h1>
                             </div>
                         </div>
 
                         <div className="w-[290px] grid lg:grid-cols-3 gap-3 pt-12">
                             <div className="py-3 text-left awami_league">
-                                <h4 className="awami_league_title_politics">ভর্তি</h4>
+                            <a href={`/Tags/ভর্তি`}  className="awami_league_title_politics">ভর্তি</a>
+                               
                             </div>
 
                             <div className="py-3 text-left awami_league">
-                                <h4 className="awami_league_title_politics">পরীক্ষা</h4>
+                                
+                                <a href={`/Tags/পরীক্ষা`}  className="awami_league_title_politics">পরীক্ষা</a>
                             </div>
 
                             <div className="py-3 text-left awami_league">
-                                <h4 className="awami_league_title_politics">উচ্চশিক্ষা</h4>
+                               
+                                <a href={`/Tags/উচ্চশিক্ষা`}  className="awami_league_title_politics">উচ্চশিক্ষা</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +209,7 @@ interface Props {
                             {NewsData_specialsec ? (
                                 news_Data = NewsData_specialsec.breaking_news[0].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData_specialsec.breaking_news[0].id}`} className="flex justify-start">
+                                <Link href={`/News/${NewsData_specialsec.breaking_news[0].id}/${NewsData_specialsec.breaking_news[0].headline}`} className="flex justify-start">
                                     <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -231,7 +234,7 @@ interface Props {
                             {NewsData_specialsec ? (
                                 news_Data = NewsData_specialsec.breaking_news[1].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData_specialsec.breaking_news[1].id}`} className="flex justify-start">
+                                <Link href={`/News/${NewsData_specialsec.breaking_news[1].id}/${NewsData_specialsec.breaking_news[1].headline}`} className="flex justify-start">
                                     <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -256,7 +259,7 @@ interface Props {
                             {NewsData_specialsec ? (
                                 news_Data = NewsData_specialsec.breaking_news[2].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData_specialsec.breaking_news[2].id}`} className="flex justify-start">
+                                <Link href={`/News/${NewsData_specialsec.breaking_news[2].id}/${NewsData_specialsec.breaking_news[2].headline}`} className="flex justify-start">
                                     <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -281,7 +284,7 @@ interface Props {
                             {NewsData_specialsec ? (
                                 news_Data = NewsData_specialsec.breaking_news[3].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData_specialsec.breaking_news[3].id}`} className="flex justify-start">
+                                <Link href={`/News/${NewsData_specialsec.breaking_news[3].id}/${NewsData_specialsec.breaking_news[3].headline}`} className="flex justify-start">
                                     <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"
@@ -306,7 +309,7 @@ interface Props {
                             {NewsData_specialsec ? (
                                 news_Data = NewsData_specialsec.breaking_news[4].news,
                                 sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                <Link href={`https://capitalnews24.net/newspost/${NewsData_specialsec.breaking_news[4].id}`} className="flex justify-start">
+                                <Link href={`/News/${NewsData_specialsec.breaking_news[4].id}/${NewsData_specialsec.breaking_news[4].headline}`} className="flex justify-start">
                                     <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                         <Image
                                             className="object-contain"

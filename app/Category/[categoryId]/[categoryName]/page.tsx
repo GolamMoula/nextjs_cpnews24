@@ -78,12 +78,12 @@ const page: FC<pageProps> = ({ }) => {
     }
 }
   return (
-    <div className="w-[1200px] mx-auto grid lg:grid-cols-1 gap-5 pt-6 ">
+    <div className="mx-56 my-10 grid lg:grid-cols-1 gap-5 pt-6">
     <div className='text-3xl'>
       <h1><a href="/">Home</a> / {categoryName}</h1>
     </div>
-    <div>
-      <ul className="flex space-x-4">
+    <div className='lg:grid-cols-1'>
+      <ul className="flex flex-wrap space-x-4">
       {NewsData ? NewsData.sub_category.map(element => (
                 <li className="border rounded px-4 py-4 hover:bg-gray-200 text-2xl" key={element.id}>
                   
@@ -95,7 +95,7 @@ const page: FC<pageProps> = ({ }) => {
               )) : <p>Loading data...</p>}
       </ul>
     </div>
-  <div className="w-[1200px] mx-auto grid lg:grid-cols-4 gap-5 pt-6 ">
+  <div className="flex flex-wrap space-x-4 mx-auto gap-5 pt-6 ">
 
   {NewsData ? (
     NewsData.breaking_news.map((newsItem: any, index: number) => {
@@ -105,7 +105,7 @@ const page: FC<pageProps> = ({ }) => {
         <a
           key={index}
           href={`/News/${newsItem.id}/${newsItem.headline}`}
-          className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          className="flex flex-wrap space-x-4 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
 
           <div className="flex flex-col justify-between p-4 leading-normal">

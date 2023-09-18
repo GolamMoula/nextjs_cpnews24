@@ -111,16 +111,16 @@ else if(selectedOption!=''){
 				</div>
 				<div className="w-[400px] grid lg:grid-cols-4 pt-16 text-left">
 					<div className="py-3 text-left awami_league">
-						<a href='{`/Tags/`}' className="awami_league_title_politics">ঢাকা</a>
+						<a href={`/Tags/ঢাকা`}  className="awami_league_title_politics">ঢাকা</a>
 					</div>
 					<div className="py-3 text-left awami_league">
-						<h4 className="awami_league_title_politics">চট্টগ্রাম</h4>
+					<a href={`/Tags/চট্টগ্রাম`} className="awami_league_title_politics">চট্টগ্রাম</a>
 					</div>
 					<div className="py-3 text-left awami_league">
-						<h4 className="awami_league_title_politics">সিলেট</h4>
+					<a href={`/Tags/সিলেট`} className="awami_league_title_politics">সিলেট</a>
 					</div>
 					<div className="py-3 text-left awami_league">
-						<h4 className="awami_league_title_politics">বরিশাল</h4>
+					<a href={`/Tags/বরিশাল`} className="awami_league_title_politics">বরিশাল</a>
 					</div>
 				</div>
 				<div className="w-[100px] grid lg:grid-cols-4 pt-16">
@@ -131,41 +131,41 @@ else if(selectedOption!=''){
 			</div>
 			<div className="w-[1200px] mx-auto grid lg:grid-cols-2 gap-3 pt-3 mt-3 ">
 				{NewsData ? (
-					<div className="w-[580px] grid lg:grid-cols-3 gap-5">
-						<div className="w-[200px] grid lg:grid-cols-1">
-							<div className="cat_six_image-container">
+					<div className="w-[580px] grid lg:grid-cols-3 gap-5 mx-5">
+						<div className="w-[200px] grid lg:grid-cols-1 gap-5">
+							<div className="cat_one_image-container">
 								<a href={`/News/${NewsData.category_news[0].id}/${NewsData.category_news[0].headline}`} >
 									<img loading="lazy" className="cat_six_img-container" src={`https://capitalnews24.net/storage/uploads/news/${NewsData.category_news[0].pic}`} alt="" />
 									<div className="imagetitle_S_D">{NewsData.category_news[0].headline}</div>
 								</a>
 							</div>
-							<div className="cat_six_image-container">
+							<div className="cat_one_image-container">
 								<a href={`/News/${NewsData.category_news[1].id}/${NewsData.category_news[1].headline}`}>
 									<img loading="lazy" className="cat_six_img-container" src={`https://capitalnews24.net/storage/uploads/news/${NewsData.category_news[1].pic}`} alt="" />
 									<div className="imagetitle_S_D">{NewsData.category_news[1].headline}</div>
 								</a>
 							</div>
-							<div className="cat_six_image-container">
+							<div className="cat_one_image-container">
 								<a href={`/News/${NewsData.category_news[2].id}/${NewsData.category_news[2].headline}`}>
 									<img loading="lazy" className="cat_six_img-container" src={`https://capitalnews24.net/storage/uploads/news/${NewsData.category_news[2].pic}`} alt="" />
 									<div className="imagetitle_S_D">{NewsData.category_news[2].headline}</div>
 								</a>
 							</div>
 						</div>
-						<div className="w-[200px] grid lg:grid-cols-1">
-							<div className="cat_six_image-container">
+						<div className="w-[200px] grid lg:grid-cols-1 gap-5">
+							<div className="cat_one_image-container">
 								<a href={`/News/${NewsData.category_news[3].id}/${NewsData.category_news[3].headline}`}>
 									<img loading="lazy" className="cat_six_img-container" src={`https://capitalnews24.net/storage/uploads/news/${NewsData.category_news[3].pic}`} alt="" />
 									<div className="imagetitle_S_D">{NewsData.category_news[3].headline}</div>
 								</a>
 							</div>
-							<div className="cat_six_image-container">
+							<div className="cat_one_image-container">
 								<a href={`/News/${NewsData.category_news[4].id}/${NewsData.category_news[4].headline}`}>
 									<img loading="lazy" className="cat_six_img-container" src={`https://capitalnews24.net/storage/uploads/news/${NewsData.category_news[4].pic}`} alt="" />
 									<div className="imagetitle_S_D">{NewsData.category_news[4].headline}</div>
 								</a>
 							</div>
-							<div className="cat_six_image-container">
+							<div className="cat_one_image-container">
 								<a href={`/News/${NewsData.category_news[5].id}/${NewsData.category_news[5].headline}`}>
 									<img loading="lazy" className="cat_six_img-container" src={`https://capitalnews24.net/storage/uploads/news/${NewsData.category_news[5].pic}`} alt="" />
 									<div className="imagetitle_S_D">{NewsData.category_news[5].headline}</div>
@@ -174,19 +174,22 @@ else if(selectedOption!=''){
 						</div>
 						<div className="w-[200px] grid lg:grid-cols-1 gap-5 pt-6">
 							<div>
-								<h1 className='text-xl font-bold'>{NewsData.category_news[6].headline}</h1>
+								<h1 className='text-xl font-bold'><a href={`/News/${NewsData.category_news[6].id}/${NewsData.category_news[6].headline}`}>{NewsData.category_news[6].headline}</a></h1>
 								<hr />
 							</div>
 							<div>
-								<h1 className='text-xl font-bold'>{NewsData.category_news[7].headline}</h1>
+							<h1 className='text-xl font-bold'><a href={`/News/${NewsData.category_news[7].id}/${NewsData.category_news[7].headline}`}>{NewsData.category_news[7].headline}</a></h1>
+
 								<hr />
 							</div>
 							<div>
-								<h1 className='text-xl font-bold'>{NewsData.category_news[8].headline}</h1>
+							<h1 className='text-xl font-bold'><a href={`/News/${NewsData.category_news[8].id}/${NewsData.category_news[8].headline}`}>{NewsData.category_news[8].headline}</a></h1>
+
 								<hr />
 							</div>
 							<div>
-								<h1 className='text-xl font-bold'>{NewsData.category_news[9].headline}</h1>
+							<h1 className='text-xl font-bold'><a href={`/News/${NewsData.category_news[9].id}/${NewsData.category_news[9].headline}`}>{NewsData.category_news[9].headline}</a></h1>
+
 								<hr />
 							</div>
 

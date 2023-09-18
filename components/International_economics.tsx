@@ -100,7 +100,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData ? (
                                     news_Data = NewsData.category_news[0].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[0].id}`} className="flex justify-start items-center">
+                                    <Link href={`/News/${NewsData.category_news[0].id}/${NewsData.category_news[0].headline}`} className="flex justify-start items-center">
                                         <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -121,7 +121,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData ? (
                                     news_Data = NewsData.category_news[1].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[1].id}`} className="flex justify-start items-center">
+                                    <Link href={`/News/${NewsData.category_news[1].id}/${NewsData.category_news[1].headline}`} className="flex justify-start items-center">
                                         <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -146,7 +146,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData ? (
                                     news_Data = NewsData.category_news[2].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[2].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData.category_news[2].id}/${NewsData.category_news[2].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -171,7 +171,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData ? (
                                     news_Data = NewsData.category_news[3].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[3].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData.category_news[3].id}/${NewsData.category_news[3].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -196,7 +196,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData ? (
                                     news_Data = NewsData.category_news[4].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[4].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData.category_news[4].id}/${NewsData.category_news[4].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -221,7 +221,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData ? (
                                     news_Data = NewsData.category_news[5].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData.category_news[5].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData.category_news[5].id}/${NewsData.category_news[5].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -279,7 +279,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData_4 ? (
                                     news_Data = NewsData_4.category_news[0].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData_4.category_news[0].id}`} className="flex justify-start items-center">
+                                    <Link href={`/News/${NewsData_4.category_news[0].id}/${NewsData_4.category_news[0].headline}`}  className="flex justify-start items-center">
                                         <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -300,7 +300,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData_4 ? (
                                     news_Data = NewsData_4.category_news[1].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData_4.category_news[1].id}`} className="flex justify-start items-center">
+                                    <Link href={`/News/${NewsData_4.category_news[1].id}/${NewsData_4.category_news[1].headline}`} className="flex justify-start items-center">
                                         <div className="w-[250px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -325,7 +325,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData_4 ? (
                                     news_Data = NewsData_4.category_news[2].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData_4.category_news[2].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData_4.category_news[2].id}/${NewsData_4.category_news[2].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -350,7 +350,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData_4 ? (
                                     news_Data = NewsData_4.category_news[3].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData_4.category_news[3].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData_4.category_news[3].id}/${NewsData_4.category_news[3].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -375,7 +375,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData_4 ? (
                                     news_Data = NewsData_4.category_news[4].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData_4.category_news[4].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData_4.category_news[4].id}/${NewsData_4.category_news[4].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"
@@ -400,7 +400,7 @@ const International_economics: React.FC<Props> = (props) => {
                                 {NewsData_4 ? (
                                     news_Data = NewsData_4.category_news[5].news,
                                     sanitizedNews = sanitizeHtml(news_Data).substring(0, 200),
-                                    <Link href={`https://capitalnews24.net/newspost/${NewsData_4.category_news[5].id}`} className="flex justify-start">
+                                    <Link href={`/News/${NewsData_4.category_news[5].id}/${NewsData_4.category_news[5].headline}`} className="flex justify-start">
                                         <div className="w-[145px] grid lg:grid-cols-1 gap-1 pt-1">
                                             <Image
                                                 className="object-contain"

@@ -27,7 +27,7 @@ const BannerAds2 = (props) => { // Receive props as a parameter
   return (
     <div>
       {AdsData1 ? (
-        <div className="w-[1200px] mx-auto grid lg:grid-cols-2 gap-5 pt-6 ">
+        <div className="mx-auto grid lg:grid-cols-2 gap-5 pt-6 ">
         <Link href={AdsData1.adbcs.link} className="flex justify-center items-center">
           <Image
             className="object-contain"

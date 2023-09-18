@@ -10,13 +10,13 @@
     font-size: 12px;
     border-radius: 10px;
 }
-.cat_six_img-container {
+.cat_one_img-container {
     width: 290px;
     height: 100px;
     max-width: 100%;
     object-fit: cover;
 }
-.cat_six_image-container {
+.cat_one_image-container {
     position: relative;
     margin: 5px;
 }
